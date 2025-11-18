@@ -10,5 +10,17 @@
 </head>
 <body>
 
+
+<footer class="d-flex justify-content-center">
+    <p>opdracht 2</p>
+    <span id="live-date"></span></footer>
 </body>
+
+<script>
+    function updateDate() {
+        document.getElementById("live-date").textContent = new Date().toLocaleString();
+    }
+    setInterval(updateDate, 1000);
+    updateDate();
+</script>
 </html>
