@@ -26,12 +26,14 @@
             </article>
         </div>
     </section>
-
-</body>
-<footer class="d-flex justify-content-center ">
-    <p>opdracht 2</p>
-    <p id="live-date"></p>
+<footer>
+    <div class="d-flex justify-content-between">
+        <p>opdracht 2</p>
+        <p id="live-date"></p>
+    </div>
 </footer>
+</body>
+
 <script>
     function updateDate() {
         document.getElementById("live-date").textContent = new Date().toLocaleString();
