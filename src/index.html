@@ -7,10 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script type="module" src="./js/main.js"></script>
+
 </head>
 <body>
 
-<h1>Header</h1>
+<h1 id="hero">Header</h1>
 
+    <h2>dit is een h2 tag</h2>
+
+    <section>
+        <div id="container">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eum eveniet expedita explicabo,
+                    fugit illo maxime neque non nostrum obcaecati optio, quidem reiciendis similique ut, vero.
+                    Ipsum laboriosam laborum voluptatem?</p>
+            </article>
+        </div>
+    </section>
+<footer>
+    <div class="d-flex justify-content-between">
+        <p>opdracht 2</p>
+        <p id="live-date"></p>
+    </div>
+</footer>
 </body>
+<script>
+    function updateDate() {
+        document.getElementById("live-date").textContent = new Date().toLocaleString();
+    }
+    setInterval(updateDate, 1000);
+    updateDate();
+</script>
 </html>
